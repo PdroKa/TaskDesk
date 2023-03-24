@@ -1,0 +1,22 @@
+.container-details-modal {
+    display: flex;
+    gap: 2px;
+
+    li {
+        button {
+            padding: 4px;
+            border-radius: 8px 8px 0 0;
+            translate: 0 6px 0;
+            background-color: transparent;
+
+            &:hover {
+                translate: 0;
+            }
+        }
+    }
+
+    .acttive-details-task {
+        border: solid 1px 1px 0 1px #f0f0f0;
+        translate: 0
+    }
+}

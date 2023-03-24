@@ -1,0 +1,115 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(var(--primary-700)60%, var(--primary-900));
+
+    .button {
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        width: 100%;
+        margin-top: 30px;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        color: var(--neutral);
+        transition: all 1s;
+        background: linear-gradient(var(--primary-700), var(--primary-900));
+
+        &:hover,
+        &:focus {
+            filter: contrast(120%) brightness(.8);
+            box-shadow: 0 0 5px var(--primary-800);
+            transition: 1s;
+        }
+    }
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: var(--primary-100);
+
+    .user-box {
+        position: relative;
+
+
+        input {
+            width: 100%;
+            padding: 10px 0;
+            color: var(--primary-700);
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: solid 1px var(--placeholder);
+            outline: none;
+            background: transparent;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: var(--placeholder);
+            pointer-events: none;
+            transition: .5s;
+        }
+    }
+}
+
+
+.logo {
+    display: block;
+    margin: 0 auto 30px;
+    width: 65px;
+    padding: 0;
+}
+
+.logo-group {
+    position: relative;
+    bottom: -35px;
+    right: -120px;
+    width: 100px;
+    filter: contrast(50%);
+}
+
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+    color: var(--primary-900);
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+
+.user-box input:focus,
+.user-box input:valid {
+    border-bottom: solid 1px var(--primary-900);
+}
+
+.user-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 16px;
+    color: var(--placeholder);
+
+    .link1 {
+        font-size: 12px;
+        position: absolute;
+        border-bottom: solid 1px;
+    }
+}

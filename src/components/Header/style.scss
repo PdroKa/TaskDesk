@@ -1,0 +1,125 @@
+.container {
+    max-width: 100%;
+    height: 99vh;
+    position: relative;
+
+    .header-main {
+        background: var(--primary-700);
+        width: 100%;
+        display: flex;
+        height: 18rem;
+        position: relative;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        @media screen and (max-width:775px) {
+            display: flex;
+            height: 14rem;
+        }
+
+        .congratulation-padrao {
+            margin-top: 4rem;
+            padding:  0 3%;
+            color: var(--title);
+
+            @media screen and (max-width:775px) {
+                display: none;
+            }
+            
+        }
+    }
+}
+
+.nav-header {
+    padding: 8px 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--primary-700);
+    max-width: 100%;
+    width: 100%;
+    z-index: 997;
+
+    @media screen and (max-width:775px) {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+    }
+
+    .media700 {
+        color: var(--title);
+        flex-wrap: nowrap;
+        display: none;
+
+        @media screen and (max-width:775px) {
+            display: block;
+            margin: 0 8px;
+            font-size: .8rem;
+        }
+    }
+}
+
+.header-menu {
+    gap: 16px;
+    height: 100%;
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+    @media screen and (max-width:775px) {
+        margin-left: 16px;
+        justify-content: flex-start;
+    }
+}
+
+#logo,
+#menu {
+    align-items: center;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#logo {
+    filter: brightness(9);
+}
+
+#menu img,
+#logo img {
+    width: 24px;
+    height: 24px;
+    transition: all 1s;
+    filter: brightness(9);
+
+    &:hover,
+    &:hover {
+
+        background-color: rgba(0, 0, 0, .5);
+        translate: 0 4px 2px;
+    }
+
+}
+
+
+
+.header-user {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    margin-right: 32px;
+
+    @media screen and (max-width:775px) {
+        gap: 8px;
+        margin-right: 0;
+    }
+}

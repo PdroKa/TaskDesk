@@ -1,0 +1,44 @@
+
+.header-search {
+    position: relative;
+
+
+    @media screen and (max-width:720px) {
+        display: flex;
+        align-items: center;
+
+        img {
+            background-color: var(--primary-700);
+            width: 1.7rem;
+            border-radius: 4px;
+            padding: 4px 8px;
+        }
+    }
+
+    input {
+        background-color: rgb(255, 255, 255, .1);
+        border: solid .5px rgba(240, 240, 240, 0.9);
+        padding: 8px;
+        border-radius: 4px;
+        outline: none;
+        color: #f0f0f0;
+
+        &::placeholder {
+            color: rgb(249, 249, 249, .5);
+        }
+
+        @media screen and (max-width:720px) {
+            padding: 4px 8px;
+            width: 7rem;
+            border: none;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 6px;
+        max-width: 32px;
+    }
+}

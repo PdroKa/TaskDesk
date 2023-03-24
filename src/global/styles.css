@@ -1,0 +1,134 @@
+:root {
+
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: red;
+    --color-text: #333333;
+
+    --Dark-primary1: #ffff;
+
+    /* <---TEXT/BACKGROUND---> */
+    --background: #E1E6EF;
+    --placeholder: #6C707A;
+
+    --black: #232323;
+    --title: #f9f9f9;
+
+    --text-black-secundary: #4A505C;
+    --text-black-disable: #a3a3a4;
+    --text-white-secundary: #C1C2C4;
+    --text-white-disable: #9D9EA1;
+
+    /* <---BRAND---> */
+    --primary-100: #F0F5FF;
+    --primary-700: #3A4F66;
+    --primary-800: #2E3F52;
+    --primary-900: #232F3D;
+
+    --secundary-100: #F8F5FF;
+    --secundary-700: #8F779F;
+    --secundary-800: #3C0561;
+    --secundary-900: #2C0248;
+    /* <---NEUTRAL---> */
+    --neutral: #fff;
+    --neutral-100: #F8F9FC;
+    --neutral-200: #F1F3F9;
+    --neutral-300: #E1E6EF;
+    --neutral-700: #3F444D;
+    --neutral-800: #23272F;
+    --neutral-900: #232323;
+    /* <---SUCCESS---> */
+    --success-100: #93E7D0;
+    --success-700: #3AC19A;
+    --success-800: #1BB188;
+    --success-900: #00956C;
+    /* <---WARNING---> */
+    --warning-100: #FFFFD3;
+    --warning-700: #F9F871;
+    --warning-800: #D1D025;
+    --warning-900: #818000;
+    /* <---DANGER---> */
+    --danger-100: #FFD5D3;
+    --danger-700: #F32013;
+    --danger-800: #CF0D02;
+    --danger-900: #9B0800;
+
+
+}
+
+.bg-primary-1 {
+    background-color: var(--primary-100);
+}
+
+.bg-primary-7 {
+    background-color: var(--primary-700);
+}
+
+.txt-black {
+    color: var(--black);
+}
+
+.txt-white {
+    color: var(--title);
+}
+
+::selection {
+    background-color: var(--primary-700);
+    color: var(--title);
+}
+
+::-webkit-scrollbar {
+    background-color: var(--primary-700);
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--primary-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-100);
+    border-radius: 20px;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}

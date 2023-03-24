@@ -1,0 +1,27 @@
+.container-add-participante {
+  background-color: var(--primary-100);
+  border: solid 1px var(--primary-900);
+  position: relative;
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 3rem;
+  overflow: hidden;
+  font-size: .8rem;
+  justify-content: space-between;
+  width: 100%;
+
+  button {
+    background-color: transparent;
+  }
+}
+
+.participantes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}

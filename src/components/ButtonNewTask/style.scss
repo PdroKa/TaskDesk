@@ -1,0 +1,41 @@
+.btn-new-task {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: var(--secundary-700);
+    color: #f0f0f0;
+    border: solid 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: flex-start;
+    transition: all .5s;
+
+    @media screen and (max-width:720px) {
+        width: 8rem;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        border-radius: .25em;
+        transition: all .5s ease-in-out;
+        padding: 0;
+        padding: 0 4px;
+    }
+
+
+    &:hover {
+        filter: brightness(.8);
+    }
+
+    img {
+        width: 24px;
+        border-radius: 50%;
+        transition: all .5s;
+
+
+        @media screen and (max-width:720px) {
+            width: 1.4rem;
+        }
+
+    }
+}

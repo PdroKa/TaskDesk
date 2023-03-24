@@ -1,0 +1,80 @@
+.container-pagination {
+    margin-top: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width:775px) {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .pagination {
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2px;
+
+        .btn-pagination {
+            width: 34px;
+            height: 34px;
+            transition: filter;
+            border-radius: 3px;
+            border: 0;
+            place-items: center;
+            border: solid 1px var(--primary-800);
+            color: var(--primary-800);
+
+
+
+            @media screen and (max-width:775px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .active {
+            background-color: var(--primary-700);
+            color: var(--neutral-100);
+        }
+
+        .page-previous,
+        .page-next {
+            background-color: var(--primary-700);
+            color: var(--neutral-100);
+            height: 34px;
+            padding: 4px 8px;
+            display: flex;
+            gap: 4px;
+            border-radius: 4px;
+            align-items: center;
+
+            &:disabled {
+                border: solid 1px var(--text-white-disable);
+                cursor: none;
+                color: var(--text-white-disable);
+                background-color: transparent;
+            }
+
+            @media screen and (max-width:775px) {
+                height: 24px;
+                padding: 2px 4px;
+            }
+        }
+    }
+
+
+}
+
+
+
+.nfsSolucoesDigitais {
+    width: 150px;
+    height: 10px;
+    padding: 0;
+}
